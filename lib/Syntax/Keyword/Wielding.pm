@@ -9,7 +9,7 @@ our $VERSION   = '0.001000';
 
 use Keyword::Declare;
 use Import::Into;
-use vars ();            # yes, in 2025...!
+use vars (); # yes, in 2025, we're using vars.pm!
 
 sub import {
 	

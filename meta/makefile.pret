@@ -3,7 +3,9 @@
 @prefix : <http://ontologi.es/doap-deps#>.
 
 `Syntax-Keyword-Wielding`
-	:runtime-requirement    [ :on "perl 5.010001"^^:CpanId ];
+	:runtime-requirement    [ :on "perl 5.014"^^:CpanId ];
+	:runtime-requirement    [ :on "Keyword::Declare"^^:CpanId ];
+	:runtime-requirement    [ :on "Import::Into"^^:CpanId ];
 	:test-requirement       [ :on "Test2::V0"^^:CpanId ];
 	:test-requirement       [ :on "Test2::Tools::Spec"^^:CpanId ];
 	:test-requirement       [ :on "Test2::Require::AuthorTesting"^^:CpanId ];
