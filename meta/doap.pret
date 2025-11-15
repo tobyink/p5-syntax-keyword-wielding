@@ -4,7 +4,7 @@
 
 `Syntax-Keyword-Wielding`
 	:programming-language "Perl" ;
-	:shortdesc            "adds a "wielding" keyword to make it easier to call the same function or method multiple times";
+	:shortdesc            "adds a `wielding` keyword to make it easier to call the same function or method multiple times";
 	:homepage             <https://metacpan.org/release/Syntax-Keyword-Wielding>;
 	:download-page        <https://metacpan.org/release/Syntax-Keyword-Wielding>;
 	:bug-database         <https://github.com/tobyink/p5-syntax-keyword-wielding/issues>;
