@@ -5,7 +5,7 @@ use warnings;
 package Syntax::Keyword::Wielding;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.001000';
+our $VERSION   = '0.001001';
 
 use Keyword::Declare;
 use Import::Into;

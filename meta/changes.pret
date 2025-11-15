@@ -4,3 +4,9 @@
 	issued  2025-11-15;
 	label   "Initial release".
 
+`Syntax-Keyword-Wielding 0.001001 cpan:TOBYINK`
+	issued  2025-11-15;
+	changeset [
+		item [ label "Minor documentation improvements." ];
+	].
+
