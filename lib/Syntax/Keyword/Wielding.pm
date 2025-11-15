@@ -91,8 +91,8 @@ followed by a semicolon, so the example in the L</SYNOPSIS> can be written as:
 
   my $play = Play->new;
   wielding $play->add_line {
-    my $b = 'Bernado'
-    my $f = 'Francisco'
+    my $b = 'Bernado';
+    my $f = 'Francisco';
     _ $b => "Who's there?"
     _ $f => "Nay, answer me! Stand and unfold yourself!"
     _ $b => "Long live the king!"
@@ -182,8 +182,6 @@ Coderef with curried arguments:
     _ @moreargs;
   }
 
-Note that the C<< ->() >> is required.
-
 =item *
 
 Code block:
@@ -197,18 +195,21 @@ will return from the code block.
 
 =back
 
-Because C<_> is always taken to be the start of a statement, you cannot do
-this:
+Because C<_> is always taken to be the start of a statement, you cannot use
+it as part of an expression:
 
   wielding func() {
     my $x = _ @args;
   }
 
-However, you can wrap it in a C<< do {...} >>> block:
+However, you can wrap it in a C<< do {...} >> block:
 
   wielding func() {
     my $x = do { _ @args };
   }
+
+Similarly, C<wielding> cannot be used as part of an expression, but is a
+whole statement. Again, wrapping it in C<< do {...} >> is a workaround.
 
 This is a limitation of the underlying keyword declaration mechanism used
 by this module.
